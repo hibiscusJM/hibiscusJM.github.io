@@ -1,8 +1,7 @@
 ---
 title: javaProject
 tags:
-       -java
-	   -Project
+       javaProject
 renderNumberedHeading: true
 grammar_cjkRuby: true
 ---
