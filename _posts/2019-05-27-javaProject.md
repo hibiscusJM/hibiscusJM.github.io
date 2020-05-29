@@ -1,5 +1,5 @@
 ---
-title: 2019-05-27-javaProject
+title: javaProject
 tags: java\Project
 renderNumberedHeading: true
 grammar_cjkRuby: true
