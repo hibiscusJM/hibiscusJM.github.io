@@ -24,12 +24,12 @@ grammar_cjkRuby: true
  -    （5）@RequestBody：该注解用来接收前端传递给后端的json字符串中的数据（请求体中的数据），因为GET方式无请求体，所以使用@RequestBody接收数据时，前端不能用GET方式提交数据，而是用POST方式提交。
  -    （6）@GetMapping、@PostMapping、@PutMapping、@DeleteMapping、@PatchMapping：看这几个注解的名字肯定和@RequestMapping有关系，实际上早期只有@RequestMapping来处理请求，为了区分不同的请求方式通常需要在注解中添加参数method=RequestMethod.GET；那么有了这几种mapping注解后，就可以在不同的方法上根据请求方式使用不同的注解。
  3.   http请求的几种方式：
-   因为controller层对应前端发送的请求，如上文所示，一些注解也根据请求不同而使用，因此这里对http的几种请求方式做一下简单总结，网上查到http的请求方式很多都写8种，但是目前已经增加到15种：
+      因为controller层对应前端发送的请求，如上文所示，一些注解也根据请求不同而使用，因此这里对http的几种请求方式做一下简单总结，网上查到http的请求方式很多都写8种，但是目前已经增加到15种：
    
  - （1）GET：请求指定的页面信息，并返回主体；
  -    （2）POST：向指定资源提交数据进行处理请求，数据被包含在请求体中，POST请求可能会导致新的资源建立或修改；
 
-   POST和GET是最常见的两种请求方法，二者在使用上也有所不同：
+      POST和GET是最常见的两种请求方法，二者在使用上也有所不同：
   
 
  - a)安全性： GET是不安全的，因为它直接将数据放到请求的URL中；post是安全的，它将其放在请求体中，就相当于运送货物的卡车，get方法是直接将货物绑在车顶，而post是放在车厢里的；但是二者都是http的请求方式，而http本身就是不安全，因此安全的唯一手段就是使用https.
@@ -37,7 +37,7 @@ grammar_cjkRuby: true
  -    c)编码限制：get中必须为ASCII字符，post不受限制；
  -    d)执行效率：get是表单默认的提交方法。
 
-   但是get和post的这些区别又都不能算作标准，这个链接中的回答很详细的从更广的层面上区分了get和post: https://www.zhihu.com/question/28586791
+      但是get和post的这些区别又都不能算作标准，这个链接中的回答很详细的从更广的层面上区分了get和post: https://www.zhihu.com/question/28586791
    
 
  - （3）HEAD：类似于GET请求，只不过返回的响应中没有具体的内容，用于获取报头；
